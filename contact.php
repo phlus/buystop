@@ -35,7 +35,7 @@ $_SESSION['captcha_id'] = $str;
 <link href="css/cloudzoom.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/animate.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet'>
 <!--[if IE 9 ]><link href="css/styleie9.css" rel="stylesheet"> <![endif]-->
 <!--[if lte IE 8 ]> <link href="css/styleie8.css" rel="stylesheet"> <script src="js/html5.js"></script><![endif]-->
 <script src="js/modernizr-2.6.2.min.js"></script>
@@ -443,7 +443,7 @@ $_SESSION['captcha_id'] = $str;
                 <a href="mailto:sales@mydomain.com">SALES@MYDOMAIL.COM</a> <br>
                 <a href="mailto:info@mydomain.com">INFO@MYDOMAIN.COM</a></p>
               <p><strong>SKYPE:</strong><br>
-                TEST.SHOP, SHOP.TEST</p>
+                TEST.STOP, SHOP.TEST</p>
             </div>
           </div>
           <br>
@@ -453,7 +453,7 @@ $_SESSION['captcha_id'] = $str;
         <div class="span6">
           <h3>FIND US</h3>
           <div class="map-outer">
-            <iframe style="width:100%; height:270px; margin:0; border:0; overflow:hidden;" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=LA+Aurora&amp;aq=&amp;sll=39.762235,-104.98827&amp;sspn=0.092238,0.209255&amp;ie=UTF8&amp;t=m&amp;st=112334869561858955379&amp;rq=1&amp;ev=zi&amp;split=1&amp;hq=LA&amp;hnear=%D0%90%D0%B2%D1%80%D0%BE%D1%80%D0%B0,+%D0%90%D1%80%D0%B0%D0%BF%D0%B0%D1%85%D0%BE,+%D0%9A%D0%BE%D0%BB%D0%BE%D1%80%D0%B0%D0%B4%D0%BE&amp;fll=39.757286,-104.986639&amp;fspn=0.046122,0.104628&amp;ll=39.775957,-104.899006&amp;spn=0.046176,0.072956&amp;z=13&amp;output=embed"></iframe>
+            <iframe style="width:100%; height:270px; margin:0; border:0; overflow:hidden;" src="httpss://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=LA+Aurora&amp;aq=&amp;sll=39.762235,-104.98827&amp;sspn=0.092238,0.209255&amp;ie=UTF8&amp;t=m&amp;st=112334869561858955379&amp;rq=1&amp;ev=zi&amp;split=1&amp;hq=LA&amp;hnear=%D0%90%D0%B2%D1%80%D0%BE%D1%80%D0%B0,+%D0%90%D1%80%D0%B0%D0%BF%D0%B0%D1%85%D0%BE,+%D0%9A%D0%BE%D0%BB%D0%BE%D1%80%D0%B0%D0%B4%D0%BE&amp;fll=39.757286,-104.986639&amp;fspn=0.046122,0.104628&amp;ll=39.775957,-104.899006&amp;spn=0.046176,0.072956&amp;z=13&amp;output=embed"></iframe>
           </div>
         </div>
       </div>
@@ -567,14 +567,14 @@ $_SESSION['captcha_id'] = $str;
     <div class="container" id="footer_bottom">
       <div class="row">
         <div class="span12">
-          <div class="pull-left noHover"><span class="hidden-phone payment_icons"><img src="img/payment1.png" alt=""><img src="img/payment2.png" alt="" height="26"><img src="img/payment3.png" alt=""><img src="img/payment4.png" alt=""><img src="img/payment5.png" alt=""></span><span class="text">&copy; 2013 <a href="#"><span class="custom_color">BUY</span>SHOP</a>. All Rights Reserved. </span></div>
+          <div class="pull-left noHover"><span class="hidden-phone payment_icons"><img src="img/payment1.png" alt=""><img src="img/payment2.png" alt="" height="26"><img src="img/payment3.png" alt=""><img src="img/payment4.png" alt=""><img src="img/payment5.png" alt=""></span><span class="text">&copy; <script type="text/javascript"> document.write(new Date().getFullYear());</script> <a href="#"><span class="custom_color">BUY</span>SHOP</a>. All Rights Reserved. </span></div>
           <div class="pull-right noHover"><a href="#"><i class="icon-facebook"></i></a> &nbsp; <a href="#"><i class="icon-twitter-bird"></i></a> &nbsp;&nbsp;&nbsp; <a href="#"><i class="icon-linkedin"></i></a> &nbsp; <a href="#"><i class="icon-pinterest"></i></a> &nbsp; <a href="#"><i class="icon-gplus"></i></a> </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script src="https://code.jquery.com/jquery-latest.min.js"></script> 
 <script src="js/jquery-ui.min.js"></script> 
 <script src="js/bootstrap.js"></script> 
 <script src="js/jquery.easing.js"></script> 
@@ -663,7 +663,7 @@ $(function() {
 
 <!--[if lt IE 9]>
 		<script type="text/javascript" src="js/html5.js"></script>
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 </body>
 </html>
