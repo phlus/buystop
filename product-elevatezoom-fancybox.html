@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BuyStop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/flexslider.css" rel="stylesheet"  />
+<link href="css/andepict.css" rel="stylesheet">
+<link href="css/product-slider.css" rel="stylesheet">
+<link href="css/jquery.selectbox.css" rel="stylesheet" />
+<link href="css/nouislider.css" rel="stylesheet">
+<link href="css/fb_style.css" rel="stylesheet">
+<link href="css/isotope.css" rel="stylesheet">
+<link href="css/elevatezoom.css" rel="stylesheet" />
+<link href="css/jquery.fancybox.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet'>
+<!--[if IE 9 ]><link href="css/styleie9.css" rel="stylesheet"> <![endif]-->
+<!--[if lte IE 8 ]> <link href="css/styleie8.css" rel="stylesheet"> <script src="js/html5.js"></script><![endif]-->
+<script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div id="right_toolbar" class="hidden-phone hidden-tablet">
+    <div><a href="#"><img src="img/logo_small.png" width="52" height="142" alt=""></a></div>
+    <div class="shoppingcart">
+      <div class="fadelink"><span class="pull-right"> <a href="shopping-cart.html" class="btn"><i class="icon-basket icon-large"></i></a> </span><span class="badge  badge-inverse">3</span>
+        <div class="shopping_cart_mini hidden-phone hidden-tablet">
+          <div class="inner-wrapper">Recently added item(s)
+            <div class="item"> <a href="#" class="product-image"><img src="img/product-image-minicart.png" alt=""></a>
+              <div class="product-detailes"> <a href="#" class="product-name">Mauris et ligula quis </a>
+                <div class="product-price">1 x $400.00</div>
+              </div>
+              <div class="alignright"> <a href="#"><i class="icon-edit-1"></i></a> <a href="#"><i class="icon-trash-3"></i></a> </div>
+            </div>
+            <div class="wrapper"> <a href="shopping-cart.html" class="button">View shopping cart</a> <a href="checkout.html" class="button">Proceed to Checkout</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search_wrapper">
+      <form class="form-search" id="form-search-right">
+        <button type="submit" class="btn" onClick="document.getElementById('form-search-right').submit()"><i class="icon-search-2 icon-large"></i></button>
+        <input type="text" class="input-medium search-query" value="search" onblur="if (this.value == '') {this.value = 'search';}" onfocus="if(this.value == 'search') {this.value = '';}">
+      </form>
+    </div>
+    <div id="back-top"> <a href="#top"><i class="icon-up-2"></i></a> </div>
+  </div>
+  <!--HEADER-->
+  <div id="topline">
+    <div class="container">
+      <div class="wrapper_w">
+        <div class="pull-left hidden-phone hidden-tablet ">
+          <div class="phone"><span><i class="icon-mobile-alt"></i>+1</span> 234 <span>5678900</span></div>
+        </div>
+        <div class="pull-right">
+          <div class="alignright"><span class="hidden-small-desktop">Default welcome msg! &nbsp;&nbsp;</span>
+            <div class="login_social hidden-tablet hidden-phone"> <a href="#" class="button_small"><i class="icon-facebook"></i><span>Facebook</span></a> <a href="#" class="button_small"><i class="icon-twitter-bird"></i><span>Twitter</span></a> </div>
+            <span class="hidden-phone"> <a href="#">Login</a> / <a href="#">Register</a> &nbsp;&nbsp;</span>
+            <div class="fadelink"> <a href="#">Account</a>
+              <div class="ul_wrapper">
+                <ul>
+                  <li> <a href="account.html"> Account </a> </li>
+                  <li> <a href="wishlist.html"> Wishlist </a> </li>
+                  <li> <a href="checkout.html"> Checkout </a> </li>
+                  <li> <a href="login.html"> Log In </a> </li>
+                </ul>
+              </div>
+            </div>
+            <span class="link_label">Language:</span>
+            <div class="fadelink"> <a href="#">English</a>
+              <div class="ul_wrapper">
+                <ul>
+                  <li><img src="img/flag_gb.png" alt=""> <a href="#">English </a> </li>
+                  <li><img src="img/flag_fr.png" alt=""> <a href="#">French </a> </li>
+                  <li><img src="img/flag_ge.png" alt=""> <a href="#">German </a> </li>
+                </ul>
+              </div>
+            </div>
+            <span class="link_label">Currency:</span>
+            <div class="fadelink"> <a href="#">US Dollars</a>
+              <div class="ul_wrapper">
+                <ul>
+                  <li> <a href="#">($)&nbsp;US&nbsp;Dollars </a> </li>
+                  <li> <a href="#">(&#8364;)&nbsp;Euro</a> </li>
+                  <li> <a href="#">(&pound;)&nbsp;British&nbsp;Pounds </a> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header">
+    <div id="spy" class="visible-desktop visible-tablet">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <nav></nav>
+          </div>
+          <div class="spy-left">
+            <div class="spy_logo"> <a href="index.html" class="logo_inner"><img src="img/logo.png" alt=""></a></div>
+          </div>
+          <div class="spy-right">
+            <div class="spyshop_search  hidden-tablet">
+              <form class="form-search" id="form-search-spy">
+                <input type="text" class="search-query" value="search here..." onblur="if (this.value == '') {this.value = 'search here...';}" onfocus="if(this.value == 'search here...') {this.value = '';}">
+                <button type="submit" class="btn" onclick="document.getElementById('form-search').submit()"><i class="icon-search-2 icon-large"></i></button>
+              </form>
+            </div>
+            <div class="spyshop"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper_w">
+        <div id="logo"> <a href="index.html" class="logo_inner"><img src="img/logo.png" width="250" height="85" alt=""></a> </div>
+        <div class="pull-right padding-1" id="cart">
+          <div class="shoppingcart">
+            <div class="fadelink"><span class="pull-right"> <a href="shopping-cart.html" class="btn"><i class="icon-basket icon-large"></i></a> </span><span class="badge  badge-inverse">3</span>
+              <div class="shopping_cart_mini hidden-phone hidden-tablet">
+                <div class="inner-wrapper">Recently added item(s)
+                  <div class="item"> <a href="#" class="product-image"><img src="img/product-image-minicart.png" alt=""></a>
+                    <div class="product-detailes"> <a href="#" class="product-name">Mauris et ligula quis </a>
+                      <div class="product-price">1 x $400.00</div>
+                    </div>
+                    <div class="alignright"> <a href="#"><i class="icon-edit-1"></i></a> <a href="#"><i class="icon-trash-3"></i></a> </div>
+                  </div>
+                  <div class="wrapper"> <a href="shopping-cart.html" class="button">View shopping cart</a> <a href="checkout.html" class="button">Proceed to Checkout</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pull-right padding-1">
+          <div class="form-search-wrapper">
+            <div id="search">
+              <form class="form-search" id="form-search">
+                <input type="text" class="search-query" value="search entire store here..." onblur="if (this.value == '') {this.value = 'search entire store here...';}" onfocus="if(this.value == 'search entire store here...') {this.value = '';}">
+                <button type="submit" class="btn" onClick="document.getElementById('form-search').submit()"><i class="icon-search-2 icon-large"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <nav>
+            <ul class="nav nav-list">
+              <li class="nav-header"> <a href="#level0" title="" data-toggle="collapse" class="collapsed"><i class="icon-th"></i>&nbsp;&nbsp;MENU<i class="icon-up pull-right"></i><i class="icon-down pull-right"></i> </a>
+                <ul class="collapse in" id="level0" >
+                  <li> <a href="index.html">HOME </a></li>
+                  <li> <a href="index.html">LAYOUT </a> <a class="icon-collapse collapsed" href="#level1" title="" data-toggle="collapse" ><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>                    <ul class="collapse in" id="level1">
+                      <li> <a href="index-creative.html"> <span>Creative Layout</span> </a> </li>
+                      <li> <a href="index-dark.html"> <span>Dark Layout</span> </a> </li>
+                      <li> <a href="index.html"> <span>Header - classic</span> </a> </li>
+                      <li> <a href="index-amazing.html"> <span>Header - amazing</span> </a> </li>
+                      <li> <a href="index-slider_fullscreen.html"> <span>Slider - full screen / flex</span> </a> </li>
+                      <li> <a href="index-boxed.html"> <span>Slider - boxed / revolution</span> </a> </li>
+                      <li> <a href="index-footer_maxi.html"> <span>Footer - maxi</span> </a> </li>
+                      <li> <a href="megamenu.html"> <span>Megamenu</span> </a> </li>
+                    </ul>
+</li>
+                  <li> <a href="listing_usual.html"> Catalogue </a> <a class="icon-collapse collapsed" href="#level2" title="" data-toggle="collapse" ><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                    <ul class="collapse in" id="level2">
+                      <li> <a href="listing_usual.html"> <span>Listing</span> </a><a class="icon-collapse collapsed" href="#level2_1" title="" data-toggle="collapse" ><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                        <ul class="collapse in" id="level2_1">
+                          <li class="level2"> <a href="listing_usual.html"> <span>Usual</span> </a> </li>
+                          <li class="level2"> <a href="listing_without_left_column.html"> <span>Without Left Column</span> </a> </li>
+                          <li class="level2"> <a href="listing_small_prev.html"> <span>Small Previews</span> </a> </li>
+                          <li class="level2"> <a href="listing_small_prev_without_left_column.html"> <span>Small Previews Without Left Column</span> </a> </li>
+                          <li class="level2"> <a href="listing_catalogue_mode.html"> <span>Catalogue Mode </span> </a> </li>
+                        </ul>
+                      <li> <a href="product.html"> <span>Product</span></a> <a class="icon-collapse collapsed" href="#level2_2" title="" data-toggle="collapse" ><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                        <ul class="collapse in" id="level2_2">
+                          <li class="level2"> <a href="product.html"> <span>Product Page</span> </a> </li>
+                          <li class="level2"> <a href="product_custom.html"> <span>Product + Custom Block</span> </a> </li>
+                          <li class="level2"> <a href="product_related.html"> <span>Product + Related Block</span> </a> </li>
+                          <li class="level2"> <a href="product-elevatezoom.html"> <span>Product Page + ElevateZoom </span> </a> </li>
+                          <li class="level2"> <a href="product-elevatezoom-fancybox.html"> <span>Product Page + Fancybox</span> </a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li> <a href="blog_listing_view.html"> Blog </a> <a class="icon-collapse collapsed" href="#level3" title="" data-toggle="collapse" ><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                    <ul class="collapse in" id="level3">
+                      <li> <a href="blog_listing_view.html"> <span>Listing View</span> </a> </li>
+                      <li> <a href="blog_table_view.html"> <span>Table View</span> </a> </li>
+                      <li> <a href="blog_single_post.html"> <span>Single Post</span> </a> </li>
+                    </ul>
+                  </li>
+                  <li> <a href="gallery_3d.html"> Gallery </a> <a class="icon-collapse collapsed" href="#level4" title="" data-toggle="collapse" ><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                    <ul class="collapse in" id="level4">
+                      <li> <a href="gallery_3d.html"> <span>Gallery: 3D Effect</span> </a> </li>
+                      <li> <a href="gallery_2_columns.html"> <span>Gallery: 2 Columns</span> </a> </li>
+                      <li> <a href="gallery_3_columns.html"> <span>Gallery: 3 Columns</span> </a> </li>
+                      <li> <a href="gallery_4_columns.html"> <span>Gallery: 4 Columns</span> </a> </li>
+                      <li> <a href="gallery_4_columns_no_space.html"> <span>Gallery: 4 Columns no space</span> </a> </li>
+                      <li> <a href="gallery_single_page.html"> <span>Gallery: Single Page</span> </a> </li>
+                    </ul>
+                  </li>
+                  <li> <a href="shortcodes_headings.html"> Shortcodes </a> <a class="icon-collapse collapsed" href="#level5" title="" data-toggle="collapse" ><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                    <ul class="collapse in" id="level5">
+                      <li> <a href="shortcodes_headings.html"><span> Headings</span> </a> </li>
+                      <li> <a href="shortcodes_alerts.html"><span> Alerts</span> </a> </li>
+                      <li> <a href="shortcodes_buttons.html"><span>Buttons</span> </a> </li>
+                      <li> <a href="shortcodes_dropcap.html"><span> Dropcap</span> </a> </li>
+                      <li> <a href="shortcodes_call_to_action.html"><span> Call To Action</span> </a> </li>
+                      <li> <a href="shortcodes_columns.html"><span> Columns</span> </a> </li>
+                      <li> <a href="shortcodes_icons.html"><span> Icons</span> </a> </li>
+                      <li> <a href="shortcodes_list.html"> <span>List styles</span> </a> </li>
+                      <li> <a href="shortcodes_popup.html"><span> Modal Popup</span> </a> </li>
+                      <li> <a href="shortcodes_pricing_tables.html"><span> Pricing Tables</span> </a> </li>
+                      <li> <a href="shortcodes_tabs.html"><span> Tabs</span> </a> </li>
+                      <li> <a href="shortcodes_team_members.html"><span> Team Members</span> </a> </li>
+                      <li> <a href="shortcodes_testimonials.html"><span> Testimonials</span> </a> </li>
+                      <li> <a href="shortcodes_toggle.html"> <span>Toggle</span> </a> </li>
+                      <li> <a href="shortcodes_video.html"><span> Video</span> </a> </li>
+                      <li> <a href="shortcodes_tables.html"><span> Tables</span> </a> </li>
+                      <li> <a href="shortcodes_quotes.html"><span> Quotes</span> </a> </li>
+                    </ul>
+                  </li>
+                  <li> <a href="typography.html"> Pages </a> <a class="icon-collapse collapsed" href="#level6" title="" data-toggle="collapse" ><i class="icon-up pull-right"></i><i class="icon-down pull-right"></i></a>
+                    <ul class="collapse in" id="level6">
+                      <li> <a href="typography.html"> typography</a> </li>
+                      <li> <a href="infographic.html">infographic</a> </li>
+                      <li> <a href="404.html">Page 404</a> </li>
+                      <li> <a href="about_us.html"> <span>About us</span> </a> </li>
+                      <li > <a href="our_office.html"> <span>Our office</span> </a> </li>
+                      <li> <a href="faq.html"> <span>FAQ</span> </a> </li>
+                      <li> <a href="team_members.html"> <span>Team Members</span> </a> </li>
+                      <li> <a href="our_store.html"> <span>Our store</span> </a> </li>
+                      <li> <a href="pricing_tables.html"> <span>Pricing table</span> </a> </li>
+                      <li> <a href="our_services.html"> <span>Our services</span> </a> </li>
+                      <li> <a href="delivery.html"> <span>Delivery</span> </a> </li>
+                      <li class="hidden-phone"> <a href="video_section.html"> <span>Video section</span> </a> </li>
+                      <li> <a href="sitemap.html"> <span>Sitemap</span> </a> </li>
+                    </ul>
+                  </li>
+                  <li> <a href="contact.php"> contacts </a> </li>
+                  <li> <a href="#"> buy theme </a> </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <nav> 
+            <!--MENU-->
+            <ul class="menu" id="nav">
+              <li class="menu_home_link"><a href="index.html"><i class="icon-home"></i></a></li>
+              <li class="dropdown"> <a href="index.html">Layout</a>
+                <ul class="level0 one-column">
+                  <li>
+                    <ul class="shadow">
+                      <li class="list_column">                        <ul class="list_in_column">
+                          <li class="level1"> <a href="index-creative.html"> <span>Creative Layout</span> </a> </li>
+                          <li class="level1"> <a href="index-dark.html"> <span>Dark Layout</span> </a> </li>
+                          <li class="level1"> <a href="index.html"> <span>Header - classic</span> </a> </li>
+                          <li class="level1"> <a href="index-amazing.html"> <span>Header - amazing</span> </a> </li>
+                          <li class="level1"> <a href="index-slider_fullscreen.html"> <span>Slider - full screen / flex</span> </a> </li>
+                          <li class="level1"> <a href="index-boxed.html"> <span>Slider - boxed / revolution</span> </a> </li>
+                          <li class="level1"> <a href="index-footer_maxi.html"> <span>Footer - maxi</span> </a> </li>
+                          <li class="level1"> <a href="megamenu.html"> <span>Megamenu</span> </a> </li>
+                        </ul>
+</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="listing_usual.html">Catalogue</a>
+                <ul class="level0 one-column">
+                  <li>
+                    <ul class="shadow">
+                      <li class="list_column">
+                        <ul class="list_in_column">
+                          <li class="level1"> <a href="listing_usual.html"> <span><strong>Listing</strong></span> </a>
+                            <ul>
+                              <li class="level2"> <a href="listing_usual.html"> <span>Usual</span> </a> </li>
+                              <li class="level2"> <a href="listing_without_left_column.html"> <span>Without Left Column</span> </a> </li>
+                              <li class="level2"> <a href="listing_small_prev.html"> <span>Small Previews</span> </a> </li>
+                              <li class="level2"> <a href="listing_small_prev_without_left_column.html"> <span>Small Previews Without Left Column</span> </a> </li>
+                              <li class="level2"> <a href="listing_catalogue_mode.html"> <span>Catalogue Mode </span> </a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="list_column">
+                        <ul class="list_in_column">
+                          <li class="level1"> <a href="product.html"> <span><strong>Product</strong></span> </a>
+                            <ul>
+                              <li class="level2"> <a href="product.html"> <span>Product Page</span> </a> </li>
+                              <li class="level2"> <a href="product_custom.html"> <span>Product + Custom Block</span> </a> </li>
+                              <li class="level2"> <a href="product_related.html"> <span>Product + Related Block</span> </a> </li>
+                              <li class="level2"> <a href="product-elevatezoom.html"> <span>Product Page + ElevateZoom </span> </a> </li>
+                              <li class="level2"> <a href="product-elevatezoom-fancybox.html"> <span>Product Page + Fancybox</span> </a> </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="blog_listing_view.html">BLOG</a>
+                <ul class="level0 one-column">
+                  <li>
+                    <ul class="shadow">
+                      <li class="list_column">
+                        <ul class="list_in_column">
+                          <li class="level1"> <a href="blog_listing_view.html"> <span>Listing View</span> </a> </li>
+                          <li class="level1"> <a href="blog_table_view.html"> <span>Table View</span> </a> </li>
+                          <li class="level1"> <a href="blog_single_post.html"> <span>Single Post</span> </a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="gallery_3d.html">gallery</a>
+                <ul class="level0 one-column">
+                  <li>
+                    <ul class="shadow">
+                      <li class="list_column">
+                        <ul class="list_in_column">
+                          <li class="level1"> <a href="gallery_3d.html"> <span>Gallery: 3D Effect</span> </a> </li>
+                          <li class="level1"> <a href="gallery_2_columns.html"> <span>Gallery: 2 Columns</span> </a> </li>
+                          <li class="level1"> <a href="gallery_3_columns.html"> <span>Gallery: 3 Columns</span> </a> </li>
+                          <li class="level1"> <a href="gallery_4_columns.html"> <span>Gallery: 4 Columns</span> </a> </li>
+                          <li class="level1"> <a href="gallery_4_columns_no_space.html"> <span>Gallery: 4 Columns no space</span> </a> </li>
+                          <li class="level1"> <a href="gallery_single_page.html"> <span>Gallery: Single Page</span> </a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="shortcodes_headings.html">Shortcodes</a>
+                <ul class="level0 one-column">
+                  <li>
+                    <ul class="shadow">
+                      <li class="list_column">
+                        <ul class="list_in_column">
+                          <li class="level1"> <a href="shortcodes_headings.html"><span> Headings</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_alerts.html"><span> Alerts</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_buttons.html"><span>Buttons</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_dropcap.html"><span> Dropcap</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_call_to_action.html"><span> Call To Action</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_columns.html"><span> Columns</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_icons.html"><span> Icons</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_list.html"> <span>List styles</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_popup.html"> <span>Modal Popup</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_pricing_tables.html"><span> Pricing Tables</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_tabs.html"><span> Tabs</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_team_members.html"><span> Team Members</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_testimonials.html"><span> Testimonials</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_toggle.html"> <span>Toggle</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_video.html"><span> Video</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_tables.html"><span> Tables</span> </a> </li>
+                          <li class="level1"> <a href="shortcodes_quotes.html"><span> Quotes</span> </a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown"> <a href="typography.html">Pages</a>
+                <ul class="level0 one-column">
+                  <li>
+                    <ul class="shadow">
+                      <li class="list_column">
+                        <ul class="list_in_column">
+                          <li class="level1"> <a href="typography.html"> <span>Typography</span> </a> </li>
+                          <li class="level1"> <a href="infographic.html"> <span>Infographic</span> </a> </li>
+                          <li class="level1"> <a href="404.html"> <span>Page 404</span> </a> </li>
+                          <li class="level1"> <a href="about_us.html"> <span>About us</span> </a> </li>
+                          <li class="level1"> <a href="our_office.html"> <span>Our office</span> </a> </li>
+                          <li class="level1"> <a href="faq.html"> <span>FAQ</span> </a> </li>
+                          <li class="level1"> <a href="team_members.html"> <span>Team Members</span> </a> </li>
+                          <li class="level1"> <a href="our_store.html"> <span>Our store</span> </a> </li>
+                          <li class="level1"> <a href="pricing_tables.html"> <span>Pricing table</span> </a> </li>
+                          <li class="level1"> <a href="our_services.html"> <span>Our services</span> </a> </li>
+                          <li class="level1"> <a href="delivery.html"> <span>Delivery</span> </a> </li>
+                          <li class="level1"> <a href="video_section.html"> <span>Video section</span> </a> </li>
+                          <li class="level1"> <a href="sitemap.html"> <span>Sitemap</span> </a> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li> <a href="contact.php">contact us</a> </li>
+              <li> <a href="#">buy theme</a> </li>
+            </ul>
+            <!--MENU--> 
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="content">
+    <div class="container top">
+      <div class="content_top">
+        <div class="wrapper_w">
+          <div class="pull-left">
+            <div class="breadcrumbs"><a href="index.html">Home</a> <span>&#8250;</span> <a href="listing_usual.html">Women</a> <span>&#8250;</span> <a href="#">Khaki Long Sleeve Sweater</a></div>
+          </div>
+          <div class="pull-right">
+            <div class="direction-nav"><a href="#" class="prev"><i class="icon-left-thin"></i></a>
+              <div class="small_preview prev hidden-phone hidden-tablet"><img src="img/small_preview.jpg" width="85" height="85" alt=""></div>
+              <a href="#" class="next"><i class="icon-right-thin"></i></a>
+              <div class="small_preview next hidden-phone hidden-tablet"><img src="img/small_preview.jpg" width="85" height="85" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="row">
+          <div class="span5">
+            <div class="product-img-box noselect">
+              <div class="row">
+                <div class="span1">
+                  <div class="product-more-views">
+                    <ul class="jcarousel jcarousel-skin-previews elevate-gallery" id="elevate-gallery">
+                      <li> <a  href="#" class="elevatezoom-gallery" data-update="" data-image="img/product_page_img_big1.jpg" 
+data-zoom-image="img/product_page_img_big1_zoom.jpg"> <img src="img/product_page_img_sm1.jpg" alt="" /></a> </li>
+                      <li> <a  href="#" class="elevatezoom-gallery" data-update="" data-image="img/product_page_img_big2.jpg" 
+data-zoom-image="img/product_page_img_big2_zoom.jpg"> <img src="img/product_page_img_sm2.jpg" alt="" /></a> </li>
+                      <li> <a  href="#" class="elevatezoom-gallery" data-update="" data-image="img/product_page_img_big3.jpg" 
+data-zoom-image="img/product_page_img_big3_zoom.jpg"> <img src="img/product_page_img_sm3.jpg" alt="" /></a> </li>
+                      <li> <a  href="#" class="elevatezoom-gallery" data-update="" data-image="img/product_page_img_big1.jpg" 
+data-zoom-image="img/product_page_img_big1_zoom.jpg"> <img src="img/product_page_img_sm1.jpg" alt="" /></a> </li>
+                      <li> <a  href="#" class="elevatezoom-gallery" data-update="" data-image="img/product_page_img_big2.jpg" 
+data-zoom-image="img/product_page_img_big2_zoom.jpg"> <img src="img/product_page_img_sm2.jpg" alt="" /></a> </li>
+                      <li> <a  href="#" class="elevatezoom-gallery" data-update="" data-image="img/product_page_img_big3.jpg" 
+data-zoom-image="img/product_page_img_big3_zoom.jpg"> <img src="img/product_page_img_sm3.jpg" alt="" /></a> </li>
+                      <li><a href="#" title=''><i class="icon-right-open-1"></i></a> </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div id="zoom-big-image" class="elevate-zoom fancybox"> <img src="img/product_page_img_big1.jpg" alt="" data-zoom-image="img/product_page_img_big1_zoom.jpg" class="elevatezoom" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="span7">
+            <div class="product-shop">
+              <div class="product_info_left">
+                <div class="product-name">
+                  <h1>Khaki Long Sleeve Sweater</h1>
+                </div>
+                <p class="availability in-stock"> <span>Availability:<strong> In stock</strong></span> </p>
+                <div class="short-description"> Twisted, inside-out seams give this cowl-neck sweater a soft edge. Long sleeves. Semi-sheer. Fabric: Soft loose knit. 100% alpaca. Hand wash. Imported. Belt sold separately. MEASUREMENTS Length: 27in / 68.5cm, from shoulder </div>
+                <div class="price-box"> <span class="old-price"> <span class="price">$241.00</span> </span> <span class="special-price"> <span class="price">$210.95</span> </span> </div>
+                <div class="add-to-cart">
+                  <form id="form-add_to_cart">
+                    <div class="qty">
+                      <label for="qty">Qty:</label>
+                      <input id="qty" class="input-text qty" type="text" title="Qty" value="1" maxlength="12" name="qty">
+                    </div>
+                    <button class="button btn-cart" title="Add to Cart" type="button" onClick="document.getElementById('form-add_to_cart').submit()"><i class="icon-basket"></i>Add to Cart</button>
+                  </form>
+                </div>
+                <div class="add-to-links">
+                  <ul>
+                    <li><a href="#" class="small_icon_color"><i class="icon-heart"></i></a><a href="#">Add to wishlist </a></li>
+                    <li><a href="#" class="small_icon_color"><i class="icon-popup"></i></a><a href="#">Add to compare </a></li>
+                    <li><a href="#" class="small_icon_color"><i class=" icon-mail-1"></i></a><a href="#">Email to a friend</a></li>
+                  </ul>
+                </div>
+                <p class="no-rating"> <a href="#">Be the first to review this product</a> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="span12">
+          <ul class="nav-tabs contentTab">
+            <li class="active"><a href="#tab1">Description</a></li>
+            <li><a href="#tab2">Reviews</a></li>
+            <li><a href="#tab3">Tags</a></li>
+            <li><a href="#tab4">Custom block</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="box-collateral box-description">
+                <h2>Details</h2>
+                <div class="std"> Silver, metallic-blue and metallic-lavender silk-blend jacquard, graphic pattern, pleated ruffle along collar, long sleeves with button-fastening cuffs, buckle-fastening silver skinny belt, large pleated rosettes at hips, pleated ruffle around back, vent at back hem, fully lined. Concealed button fastenings through front. 58% silk, 37% metal, 5% polyester; lining: 92% polyester, 8% elastane. Dry clean. Zip and hook fastening at back. 100% silk. Specialist clean. </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+              <div class="box-collateral box-reviews" id="customer-reviews">
+                <div class="form-add">
+                  <h2>Write Your Own Review</h2>
+                  <form action="#" method="post" id="review-form">
+                    <fieldset>
+                      <h4>You're reviewing: <span class="color">Carven - Gabardine Dress</span></h4>
+                      <h5>How do you rate this product? <em class="required">*</em></h5>
+                      <span id="input-message-box"></span>
+                      <table class="table table-bordered table-hover" id="product-review-table">
+                        <tbody>
+                          <tr class="first odd">
+                            <th>&nbsp;</th>
+                            <th class="aligncenter">1<span class="star_title"> star</span></th>
+                            <th class="aligncenter">2<span class="star_title"> stars</span></th>
+                            <th class="aligncenter">3<span class="star_title"> stars</span></th>
+                            <th class="aligncenter">4<span class="star_title"> stars</span></th>
+                            <th class="aligncenter">5<span class="star_title"> stars</span></th>
+                          </tr>
+                          <tr class="even">
+                            <td>Quality</td>
+                            <td class="aligncenter"><input type="radio" name="ratings[1]" id="Quality_1" value="1" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[1]" id="Quality_2" value="2" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[1]" id="Quality_3" value="3" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[1]" id="Quality_4" value="4" class="radio"></td>
+                            <td class="aligncenter last"><input type="radio" name="ratings[1]" id="Quality_5" value="5" class="radio"></td>
+                          </tr>
+                          <tr class="odd">
+                            <td>Price</td>
+                            <td class="aligncenter"><input type="radio" name="ratings[3]" id="Price_1" value="11" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[3]" id="Price_2" value="12" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[3]" id="Price_3" value="13" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[3]" id="Price_4" value="14" class="radio"></td>
+                            <td class="aligncenter last"><input type="radio" name="ratings[3]" id="Price_5" value="15" class="radio"></td>
+                          </tr>
+                          <tr class="last even">
+                            <td>Value</td>
+                            <td class="aligncenter"><input type="radio" name="ratings[2]" id="Value_1" value="6" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[2]" id="Value_2" value="7" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[2]" id="Value_3" value="8" class="radio"></td>
+                            <td class="aligncenter"><input type="radio" name="ratings[2]" id="Value_4" value="9" class="radio"></td>
+                            <td class="aligncenter last"><input type="radio" name="ratings[2]" id="Value_5" value="10" class="radio"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <input type="hidden" name="validate_rating" class="validate-rating" value="">
+                      <ul class="form-list">
+                        <li>
+                          <label for="nickname_field" class="required"><em>*</em>Nickname</label>
+                          <div class="input-box">
+                            <input type="text" name="nickname" id="nickname_field" class="input-text required-entry" value="">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="summary_field" class="required"><em>*</em>Summary of Your Review</label>
+                          <div class="input-box">
+                            <input type="text" name="title" id="summary_field" class="input-text required-entry" value="">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="review_field" class="required"><em>*</em>Review</label>
+                          <div class="input-box">
+                            <textarea name="detail" id="review_field" cols="5" rows="3" class="required-entry"></textarea>
+                          </div>
+                        </li>
+                      </ul>
+                    </fieldset>
+                    <div class="buttons-set">
+                      <button type="submit" title="Submit Review" class="button pull-right">Submit Review</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+              <div class="box-collateral box-tags">
+                <h2>Product Tags</h2>
+                <form id="addTagForm" action="#" method="get">
+                  <div class="form-add">
+                    <label for="productTagName">Add Your Tags:</label>
+                    <div class="input-box">
+                      <input type="text" class="input-text required-entry" name="productTagName" id="productTagName">
+                    </div>
+                    <button type="submit" title="Add Tags" class="button"> <span> <span>Add Tags</span> </span> </button>
+                  </div>
+                </form>
+                <p class="note">Use spaces to separate tags. Use single quotes (') for phrases.</p>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab4">
+              <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+              <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h3 class="padding">upsell products</h3>
+      <div class="carousel es-carousel-wrapper style0">
+        <div class="es-carousel">
+          <div class="row">
+            <div class="product_outer carousel_items">
+              <div class="span3 product carousel_item">
+                <div class="product-image-wrapper onhover animate scale"><a href="product.html"><img src="img/product_img.jpg" alt=""><img src="img/product1_over.jpg" class="roll_over_img" alt=""></a> </div>
+                <div class="wrapper-hover">
+                  <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                  <div class="wrapper"><span class="sort-rating hidden">10</span>
+                    <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                    <div class="product-price">$<span class="sort-price">295.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview hidden-tablet hidden-phone">
+                <div class="wrapper">
+                  <div class="col-1 hidden"><a href="#" data-rel="img/preview_big_img1.jpg" class="image"><img src="img/preview_big_img1.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img2.jpg" class="image"><img src="img/preview_big_img2.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img3.jpg" class="image"><img src="img/preview_big_img3.jpg" alt="" class="thumb"/></a></div>
+                  <div class="col-2">
+                    <div class="big_image"><a href="product.html"><img src="img/preview_big_img1.jpg"  alt="" /></a></div>
+                    <div class="wrapper-hover">
+                      <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                      <div class="wrapper"><span class="sort-rating hidden">10</span>
+                        <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                        <div class="product-price">$<span class="sort-price">295.00</span></div>
+                      </div>
+                      <div class="product-link"> <a href="#">Add to Favorites</a> <br>
+                        <a href="#">Add to Compare</a> </div>
+                      <div class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span3 product carousel_item">
+                <div class="product-image-wrapper onhover animate scale"><a href="product.html"><img src="img/product_img-08.jpg" alt=""><img src="img/product1_over.jpg" class="roll_over_img" alt=""></a> </div>
+                <div class="wrapper-hover">
+                  <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                  <div class="wrapper"><span class="sort-rating hidden">10</span>
+                    <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                    <div class="product-price">$<span class="sort-price">295.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview hidden-tablet hidden-phone">
+                <div class="wrapper">
+                  <div class="col-1"><a href="#" data-rel="img/preview_big_img1.jpg" class="image"><img src="img/preview_big_img1.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img2.jpg" class="image"><img src="img/preview_big_img2.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img3.jpg" class="image"><img src="img/preview_big_img3.jpg" alt="" class="thumb"/></a></div>
+                  <div class="col-2">
+                    <div class="big_image"><a href="product.html"><img src="img/preview_big_img1.jpg"  alt="" /></a></div>
+                    <div class="wrapper-hover">
+                      <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                      <div class="wrapper"><span class="sort-rating hidden">10</span>
+                        <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                        <div class="product-price">$<span class="sort-price">295.00</span></div>
+                      </div>
+                      <div class="product-link"> <a href="#">Add to Favorites</a> <br>
+                        <a href="#">Add to Compare</a> </div>
+                      <div class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span3 product carousel_item">
+                <div class="product-image-wrapper onhover animate scale"><a href="product.html"><img src="img/product_img-09.jpg" alt=""><img src="img/product1_over.jpg" class="roll_over_img" alt=""></a> </div>
+                <div class="wrapper-hover">
+                  <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                  <div class="wrapper"><span class="sort-rating hidden">10</span>
+                    <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                    <div class="product-price">$<span class="sort-price">295.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview hidden-tablet hidden-phone">
+                <div class="wrapper">
+                  <div class="col-1"><a href="#" data-rel="img/preview_big_img1.jpg" class="image"><img src="img/preview_big_img1.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img2.jpg" class="image"><img src="img/preview_big_img2.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img3.jpg" class="image"><img src="img/preview_big_img3.jpg" alt="" class="thumb"/></a></div>
+                  <div class="col-2">
+                    <div class="big_image"><a href="product.html"><img src="img/preview_big_img1.jpg"  alt="" /></a></div>
+                    <div class="wrapper-hover">
+                      <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                      <div class="wrapper"><span class="sort-rating hidden">10</span>
+                        <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                        <div class="product-price">$<span class="sort-price">295.00</span></div>
+                      </div>
+                      <div class="product-link"> <a href="#">Add to Favorites</a> <br>
+                        <a href="#">Add to Compare</a> </div>
+                      <div class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span3 product carousel_item">
+                <div class="product-image-wrapper onhover animate scale"><a href="product.html"><img src="img/product_img-10.jpg" alt=""><img src="img/product1_over.jpg" class="roll_over_img" alt=""></a> </div>
+                <div class="wrapper-hover">
+                  <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                  <div class="wrapper"><span class="sort-rating hidden">10</span>
+                    <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                    <div class="product-price">$<span class="sort-price">295.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview hidden-tablet hidden-phone">
+                <div class="wrapper">
+                  <div class="col-1"><a href="#" data-rel="img/preview_big_img1.jpg" class="image"><img src="img/preview_big_img1.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img2.jpg" class="image"><img src="img/preview_big_img2.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img3.jpg" class="image"><img src="img/preview_big_img3.jpg" alt="" class="thumb"/></a></div>
+                  <div class="col-2">
+                    <div class="big_image"><a href="product.html"><img src="img/preview_big_img1.jpg"  alt="" /></a></div>
+                    <div class="wrapper-hover">
+                      <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                      <div class="wrapper"><span class="sort-rating hidden">10</span>
+                        <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                        <div class="product-price">$<span class="sort-price">295.00</span></div>
+                      </div>
+                      <div class="product-link"> <a href="#">Add to Favorites</a> <br>
+                        <a href="#">Add to Compare</a> </div>
+                      <div class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span3 product carousel_item">
+                <div class="product-image-wrapper onhover animate scale"><a href="product.html"><img src="img/product_img-11.jpg" alt=""><img src="img/product1_over.jpg" class="roll_over_img" alt=""></a> </div>
+                <div class="wrapper-hover">
+                  <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                  <div class="wrapper"><span class="sort-rating hidden">10</span>
+                    <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                    <div class="product-price">$<span class="sort-price">295.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview hidden-tablet hidden-phone">
+                <div class="wrapper">
+                  <div class="col-1"><a href="#" data-rel="img/preview_big_img1.jpg" class="image"><img src="img/preview_big_img1.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img2.jpg" class="image"><img src="img/preview_big_img2.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img3.jpg" class="image"><img src="img/preview_big_img3.jpg" alt="" class="thumb"/></a></div>
+                  <div class="col-2">
+                    <div class="big_image"><a href="product.html"><img src="img/preview_big_img1.jpg"  alt="" /></a></div>
+                    <div class="wrapper-hover">
+                      <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                      <div class="wrapper"><span class="sort-rating hidden">10</span>
+                        <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                        <div class="product-price">$<span class="sort-price">295.00</span></div>
+                      </div>
+                      <div class="product-link"> <a href="#">Add to Favorites</a> <br>
+                        <a href="#">Add to Compare</a> </div>
+                      <div class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span3 product carousel_item">
+                <div class="product-image-wrapper onhover animate scale"><a href="product.html"><img src="img/product_img-12.jpg" alt=""><img src="img/product1_over.jpg" class="roll_over_img" alt=""></a> </div>
+                <div class="wrapper-hover">
+                  <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                  <div class="wrapper"><span class="sort-rating hidden">10</span>
+                    <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                    <div class="product-price">$<span class="sort-price">295.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview hidden-tablet hidden-phone">
+                <div class="wrapper">
+                  <div class="col-1"><a href="#" data-rel="img/preview_big_img1.jpg" class="image"><img src="img/preview_big_img1.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img2.jpg" class="image"><img src="img/preview_big_img2.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img3.jpg" class="image"><img src="img/preview_big_img3.jpg" alt="" class="thumb"/></a></div>
+                  <div class="col-2">
+                    <div class="big_image"><a href="product.html"><img src="img/preview_big_img1.jpg"  alt="" /></a></div>
+                    <div class="wrapper-hover">
+                      <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                      <div class="wrapper"><span class="sort-rating hidden">10</span>
+                        <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                        <div class="product-price">$<span class="sort-price">295.00</span></div>
+                      </div>
+                      <div class="product-link"> <a href="#">Add to Favorites</a> <br>
+                        <a href="#">Add to Compare</a> </div>
+                      <div class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span3 product carousel_item">
+                <div class="product-image-wrapper onhover animate scale"><a href="product.html"><img src="img/product_img-13.jpg" alt=""><img src="img/product1_over.jpg" class="roll_over_img" alt=""></a> </div>
+                <div class="wrapper-hover">
+                  <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                  <div class="wrapper"><span class="sort-rating hidden">10</span>
+                    <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                    <div class="product-price">$<span class="sort-price">295.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview hidden-tablet hidden-phone">
+                <div class="wrapper">
+                  <div class="col-1"><a href="#" data-rel="img/preview_big_img1.jpg" class="image"><img src="img/preview_big_img1.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img2.jpg" class="image"><img src="img/preview_big_img2.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img3.jpg" class="image"><img src="img/preview_big_img3.jpg" alt="" class="thumb"/></a></div>
+                  <div class="col-2">
+                    <div class="big_image"><a href="product.html"><img src="img/preview_big_img1.jpg"  alt="" /></a></div>
+                    <div class="wrapper-hover">
+                      <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                      <div class="wrapper"><span class="sort-rating hidden">10</span>
+                        <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                        <div class="product-price">$<span class="sort-price">295.00</span></div>
+                      </div>
+                      <div class="product-link"> <a href="#">Add to Favorites</a> <br>
+                        <a href="#">Add to Compare</a> </div>
+                      <div class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="span3 product carousel_item">
+                <div class="product-image-wrapper onhover animate scale"><a href="product.html"><img src="img/product_img-14.jpg" alt=""><img src="img/product1_over.jpg" class="roll_over_img" alt=""></a> </div>
+                <div class="wrapper-hover">
+                  <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                  <div class="wrapper"><span class="sort-rating hidden">10</span>
+                    <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                    <div class="product-price">$<span class="sort-price">295.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview hidden-tablet hidden-phone">
+                <div class="wrapper">
+                  <div class="col-1"><a href="#" data-rel="img/preview_big_img1.jpg" class="image"><img src="img/preview_big_img1.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img2.jpg" class="image"><img src="img/preview_big_img2.jpg" alt="" class="thumb"/></a> <a href="#" data-rel="img/preview_big_img3.jpg" class="image"><img src="img/preview_big_img3.jpg" alt="" class="thumb"/></a></div>
+                  <div class="col-2">
+                    <div class="big_image"><a href="product.html"><img src="img/preview_big_img1.jpg"  alt="" /></a></div>
+                    <div class="wrapper-hover">
+                      <div class="product-name"><a href="product.html">Nullam id justo sed labore diam diam aliquam nonumy</a></div>
+                      <div class="wrapper"><span class="sort-rating hidden">10</span>
+                        <div class="product-tocart"> <a href="shopping-cart.html"><i class="icon-basket"></i></a> </div>
+                        <div class="product-price">$<span class="sort-price">295.00</span></div>
+                      </div>
+                      <div class="product-link"> <a href="#">Add to Favorites</a> <br>
+                        <a href="#">Add to Compare</a> </div>
+                      <div class="rating"> <strong> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> <a href="#"><i class="icon-star"></i></a> </strong> <a href="#"><i class="icon-star"></i></a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="push"></div>
+</div>
+<!--FOOTER-->
+<div  id="footer">
+  <div id="footer_line">
+    <div id="footer_popup" class="footer_bg allowHover">
+      <div class="container">
+        <div class="row">
+          <div class="span6">
+            <div class="row">
+              <div class="span3">
+                <h3>Information</h3>
+                <p> <a href="about_us.html">About</a> </p>
+                <p> <a href="delivery.html">Delivery</a> </p>
+                <p> <a href="our_store.html">Privacy Policy</a> </p>
+                <p> <a href="our_store.html">Terms &amp; Conditions</a> </p>
+              </div>
+              <div class="span3">
+                <h3>CUSTOMER SERVICE</h3>
+                <p> <a href="contact.php">Contact Us </a> </p>
+                <p> <a href="our_services.html"> Returns</a> </p>
+                <p> <a href="sitemap.html"> Site Map </a> </p>
+              </div>
+            </div>
+          </div>
+          <div class="span6">
+            <div class="row">
+              <div class="span3">
+                <h3>MY ACCOUNT</h3>
+                <p> <a href="account.html">My Account </a> </p>
+                <p> <a href="shopping-cart.html"> Order History</a> </p>
+                <p> <a href="wishlist.html"> Wish List</a> </p>
+                <p> <a href="contact.php"> Newsletter</a> </p>
+              </div>
+              <div class="span3">
+                <h3>NEWSLETTER SIGNUP</h3>
+                <form class="form-mail">
+                  <input type="text" class="input-medium" value="enter your e-mail..." onblur="if (this.value == '') {this.value = 'enter your e-mail...';}" onfocus="if(this.value == 'enter your e-mail...') {this.value = '';}">
+                  <button type="submit" class="btn"><i class="icon-email"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer_button"><i class="icon-up"></i></div>
+    <div class="container" id="footer_bottom">
+      <div class="row">
+        <div class="span12">
+          <div class="pull-left noHover"><span class="hidden-phone payment_icons"><img src="img/payment1.png" alt=""><img src="img/payment2.png" alt="" height="26"><img src="img/payment3.png" alt=""><img src="img/payment4.png" alt=""><img src="img/payment5.png" alt=""></span><span class="text">&copy; 2013 <a href="#"><span class="custom_color">BUY</span>SHOP</a>. All Rights Reserved. </span></div>
+          <div class="pull-right noHover"><a href="#"><i class="icon-facebook"></i></a> &nbsp; <a href="#"><i class="icon-twitter-bird"></i></a> &nbsp;&nbsp;&nbsp; <a href="#"><i class="icon-linkedin"></i></a> &nbsp; <a href="#"><i class="icon-pinterest"></i></a> &nbsp; <a href="#"><i class="icon-gplus"></i></a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script src="js/jquery-ui.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/jquery.easing.js"></script> 
+<script src="js/jquery.flexslider.js"></script> 
+<script src="js/jquery.elastislide.js"></script> 
+<script src="js/jquery.selectbox-0.2.js"></script> 
+<script src="js/jquery.nouislider.js"></script> 
+<script src="js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.elevatezoom.js"></script> 
+<script src='js/jquery.fancybox.js'></script> 
+<script src="js/jquery.inview.js"></script> 
+<script src="js/jquery.jcarousel.min.js"></script> 
+<script src="js/scripts.js"></script>
+<script src="js/doubletaptogo.js"></script>
+<script src="js/navigation.js"></script> 
+<!--[if lt IE 9]>
+		<script type="text/javascript" src="js/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</body>
+</html>
