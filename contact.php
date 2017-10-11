@@ -411,7 +411,7 @@ $_SESSION['captcha_id'] = $str;
                 </ul>
               </li>
               <li> <a href="contact.php">contact us</a> </li>
-              <li> <a href="#">buy theme</a> </li>
+              <li> <a href="https://phlus.com/product/buystop"> buy theme </a> </li>
             </ul>
             <!--MENU--> 
           </nav>
